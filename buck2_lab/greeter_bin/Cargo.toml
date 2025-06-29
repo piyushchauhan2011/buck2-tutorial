@@ -1,0 +1,12 @@
+[package]
+name = "greeter_bin"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+greeter_lib = { path = "../greeter_lib" }
+logging_lib = { path = "../logging_lib" }
+
+[[bin]]
+name = "greeter_bin"
+path = "src/main.rs"

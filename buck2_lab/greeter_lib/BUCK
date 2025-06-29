@@ -1,0 +1,19 @@
+rust_library(
+    name = "greeter_lib",
+    srcs = ["src/lib.rs"],
+    visibility = ["PUBLIC"],
+    deps = [
+        # Add the dep to our logging_lib
+        "root//buck2_lab/logging_lib:logging_lib",
+    ],
+)
+
+# New test target for our unit tests
+rust_test(
+    name = "test",
+    srcs = ["tests/test.rs"],
+    deps = [
+        # The test needs to depend on the library it's testing
+        ":greeter_lib",
+    ]
+)

@@ -1,0 +1,10 @@
+[package]
+name = "greeter_lib"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+logging_lib = { path = "../logging_lib" }
+
+[lib]
+path = "src/lib.rs"

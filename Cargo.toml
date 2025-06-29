@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "buck2_lab/greeter_bin",
+    "buck2_lab/greeter_lib",
+    "buck2_lab/logging_lib",
+]
